@@ -47,6 +47,9 @@ That's it. `import earthmover_colormaps` registers all colormaps with matplotlib
 | `em.diverging` | Diverging | Violet ↔ light grey ↔ lime. Centered neutral for anomalies. |
 | `em.ocean` | Sequential | Midnight → blue → green → lime. Cool multi-hue, oceanographic. |
 | `em.bloom` | Sequential | Midnight → magenta → pink → lavender → light grey. Warm pink family. |
+| `em.heat` | Sequential | Midnight → deep red → orange → amber → warm white. Fire/thermal. |
+| `em.earth` | Sequential | Dark blue → teal → green → sand → cream. Terrain/bathymetry. |
+| `em.twilight` | Cyclic | Midnight → violet → light → lime → midnight. For phase/angle data. |
 
 Every colormap has a reversed variant (append `_r`): `"em.signal_r"`, `"em.violet_r"`, etc.
 
@@ -63,6 +66,7 @@ plt.imshow(data, cmap="em.signal")
 # 2. Attribute access (short name, no "em." prefix)
 earthmover_colormaps.signal
 earthmover_colormaps.diverging
+earthmover_colormaps.heat
 
 # 3. Dict access (full name)
 earthmover_colormaps.cm["em.signal"]
@@ -113,10 +117,10 @@ image.cmap: em.signal
 
 All colormaps are designed with:
 
-- **Perceptual uniformity** — interpolated in CIELAB color space with arc-length parameterization, so equal data steps produce equal visual steps (all have ΔE coefficient of variation < 4%)
-- **Monotonic lightness** — sequential maps go strictly light-to-dark or dark-to-light; diverging maps have a V-shaped lightness profile. This means they print well in grayscale
-- **Colorblind safety** — tested under simulated deuteranopia and protanopia at full severity. See [docs/colorblind-accessibility.md](docs/colorblind-accessibility.md)
-- **Brand coherence** — derived from the Earthmover brand palette (Midnight `#201F2C`, Violet `#A653FF`, Lime `#B7E400`)
+- **Perceptual uniformity** — designed and optimized in CAM02-UCS color space with arc-length parameterization, so equal data steps produce equal visual steps. All colormaps achieve a ΔE coefficient of variation < 2% in CAM02-UCS, comparable to or better than matplotlib's `viridis`.
+- **Monotonic lightness** — sequential maps go strictly light-to-dark or dark-to-light; diverging maps have a V-shaped lightness profile; cyclic maps have a symmetric arch. This means they print well in grayscale.
+- **Colorblind safety** — tested under simulated deuteranopia, protanopia, and tritanopia at full severity. The violet–lime axis maps to blue–yellow under red-green CVD, preserving discriminability. See [docs/colorblind-accessibility.md](docs/colorblind-accessibility.md).
+- **Brand coherence** — derived from the Earthmover brand palette (Midnight `#201F2C`, Violet `#A653FF`, Lime `#B7E400`).
 
 ![lightness profiles](images/lightness_profiles.png)
 
@@ -135,9 +139,22 @@ from earthmover_colormaps._data import COLORMAPS
 ```bash
 git clone https://github.com/earth-mover/earthmover-colormaps.git
 cd earthmover-colormaps
-uv sync
+uv sync --group dev
 uv run pytest
 ```
+
+### Colormap design tooling
+
+The `tools/` directory contains scripts for creating and optimizing colormaps using CAM02-UCS perceptual color space:
+
+```bash
+uv sync --group design     # install colorspacious, scipy, viscm
+cd tools/
+uv run python generate_data.py   # optimize all colormaps, regenerate _data.py
+uv run python visualize.py       # generate diagnostic plots in images/
+```
+
+Each colormap is also exported as a `.jscm` file (in `earthmover_colormaps/_jscm/`) compatible with [viscm](https://github.com/matplotlib/viscm) for interactive inspection and refinement.
 
 ## License
 

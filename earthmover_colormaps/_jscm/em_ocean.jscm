@@ -1,0 +1,52 @@
+{
+  "content-type": "application/vnd.matplotlib.colormap-v1+json",
+  "name": "em.ocean",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "usage-hints": [
+    "sequential",
+    "greyscale-safe"
+  ],
+  "colorspace": "sRGB",
+  "domain": "continuous",
+  "colors": "#201f2b#20202c#20202e#21212f#212230#212232#212333#212435#212536#222537#222639#22273a#22283c#22283e#22293f#222a41#222b42#222c44#222d45#222d47#222e49#222f4a#22304c#22314e#223250#223351#213353#213455#213557#213658#20375a#20385c#20395e#1f3a60#1f3b62#1e3c63#1e3d65#1f3e66#203f68#204169#21426a#22436c#22446d#23456e#234770#244871#254973#254a74#264c75#274d77#274e78#284f79#28517b#29527c#2a537d#2a547f#2b5580#2b5781#2c5883#2d5984#2d5a85#2e5c87#2e5d88#2f5e89#305f8b#30618c#31628e#31638f#326490#336692#336793#346894#346996#356b97#366c99#366d9a#376e9b#37709d#38719e#39729f#3974a1#3a75a2#3a76a4#3b77a5#3c79a6#3c7aa8#3d7ba9#3d7dab#3e7eac#3f7fad#3f81af#4082b0#4183b2#4185b3#4286b5#4287b6#4389b7#448ab9#448bba#458dbc#458ebd#468fbf#4791c0#4792c2#4893c3#4995c4#4996c6#4a97c7#4a99c9#4b9aca#4c9ccc#4c9dcd#4d9ecf#4ea0d0#4ea1d2#4fa3d3#50a4d5#50a5d6#51a7d8#52a8d9#52aadb#53abdd#53adde#54aee0#55b0e1#55b1e3#56b2e4#57b4e6#57b5e7#58b7e9#59b8eb#59baec#5abbee#5bbdef#5bbef1#5cc0f3#5dc1f4#5dc3f6#5ec4f6#5ec4f5#5ec5f3#5dc5f1#5dc5f0#5dc6ee#5dc6ed#5dc6eb#5cc6ea#5cc7e8#5cc7e7#5cc7e5#5bc7e4#5bc8e2#5bc8e1#5ac8df#5ac8de#5ac9dd#59c9db#59c9da#59c9d8#58cad7#58cad6#57cad4#57cad3#56cad1#56cbd0#56cbcf#55cbcd#55cbcc#54cccb#54ccc9#53ccc8#53ccc6#52cdc5#51cdc4#51cdc2#50cdc1#4fcdbf#4fcebe#4ecebc#4dcebb#4dceba#4ccfb8#4bcfb6#4acfb5#49cfb3#48d0b2#47d0b0#46d0af#45d0ad#44d1ab#43d1aa#42d1a8#41d1a6#3fd2a5#3ed2a3#3dd2a1#3bd29f#39d39d#38d39c#36d39a#34d498#32d496#34d494#3ad493#3ed592#43d591#47d58f#4bd58e#4ed68d#52d68c#55d68a#58d689#5bd688#5fd787#61d785#64d784#67d783#6ad881#6cd880#6fd87e#72d87d#74d97c#77d97a#79d979#7cda77#7eda76#80da74#83da72#85db71#87db6f#8adb6e#8cdb6c#8edc6a#90dc68#93dc67#95dd65#97dd63#99dd61#9bdd5f#9ede5d#a0de5b#a2de59#a4df57#a6df54#a8df52#abe050#ade04d#afe04b#b1e148#b3e145#b5e143#b7e240#bae23d#bce239#bee336#c0e332",
+  "extensions": {
+    "https://matplotlib.org/viscm": {
+      "type": "sequential",
+      "min_Jp": 15.383299838853024,
+      "max_Jp": 86.42126925372791,
+      "control_points_ab": [
+        [
+          1.2198763539431041,
+          -7.484635403748566
+        ],
+        [
+          -4.621393661893805,
+          -37.534121530752984
+        ],
+        [
+          -34.10937113149273,
+          20.09660585734982
+        ],
+        [
+          27.307944924336052,
+          -84.13606189773111
+        ],
+        [
+          -58.97596055196908,
+          13.83043789189565
+        ],
+        [
+          -21.727714742893472,
+          12.536036688325993
+        ],
+        [
+          -15.050372338592148,
+          30.652806887029026
+        ]
+      ],
+      "n_control": 7,
+      "spline_method": "Bezier",
+      "uniform_colorspace": "CAM02-UCS"
+    }
+  }
+}

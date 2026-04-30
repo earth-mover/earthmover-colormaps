@@ -1,0 +1,72 @@
+{
+  "content-type": "application/vnd.matplotlib.colormap-v1+json",
+  "name": "em.twilight",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "usage-hints": [
+    "cyclic"
+  ],
+  "colorspace": "sRGB",
+  "domain": "continuous",
+  "colors": "#201f2c#22202e#232131#252233#272435#282538#2a263a#2c273d#2d283f#2f2942#312a44#332c47#352d4a#362e4c#382f4f#3a3051#3c3154#3e3257#3f3359#41345c#43365f#453762#473864#493967#4b3a6a#4d3b6d#4f3c70#503e72#523f75#544078#56417b#58427e#5a4480#5c4583#5e4686#604889#62498b#644a8e#664c91#684d94#6a4e96#6c5099#6e519c#70539e#7254a1#7456a3#7658a6#7859a8#7a5bab#7c5dad#7e5faf#8060b1#8262b4#8464b6#8666b8#8768ba#896abc#8b6cbe#8d6ebf#8f70c1#9172c3#9274c4#9476c6#9678c8#987ac9#997cca#9b7ecc#9d81cd#9e83ce#a085cf#a287d1#a389d2#a58cd3#a78ed4#a890d5#aa92d6#ab94d6#ad97d7#af99d8#b09bd9#b29dda#b39fda#b5a2db#b6a4dc#b8a6dc#b9a8dd#bbaade#bcadde#beafdf#bfb1df#c1b3e0#c3b5e0#c4b7e1#c6bae1#c7bce2#c9bee3#cac0e3#ccc2e4#cdc4e4#cfc6e5#d0c8e5#d2cae6#d3cce6#d5cfe7#d7d1e7#d8d3e8#dad5e8#dbd7e9#ddd9ea#dfdbea#e0ddeb#e2dfec#e4e1ec#e5e3ed#e7e5ee#e9e7ee#eae9ef#ecebf0#eeedf1#f0eff2#f1f1f3#f3f3f4#f5f5f5#f4f4f3#f2f4f1#f1f4ef#f0f3ec#eef3ea#edf3e7#ecf3e4#eaf2e2#e9f2df#e8f1db#e6f1d8#e5f1d5#e3f0d2#e2f0ce#e0efcb#dfeec7#ddeec4#dcedc0#daecbc#d8ebb9#d6eab5#d5e9b1#d3e8ad#d1e7a9#cfe6a5#cde5a1#cbe39d#c8e299#c6e095#c4de91#c2dd8d#bfdb8a#bdd986#bbd783#b9d580#b6d37c#b4d079#b2ce77#afcc74#adca71#abc86f#a9c56d#a7c36b#a4c169#a2bf67#a0bc66#9eba64#9cb863#9ab661#98b460#96b15f#95af5e#93ad5d#91ab5c#8fa95b#8da75b#8ba55a#8aa259#88a058#869e58#859c57#839a57#819856#809656#7e9455#7c9255#7b9054#798e54#788c54#768a53#758953#738753#728552#708352#6f8151#6d7f51#6c7d51#6a7b50#697a50#677850#66764f#65744f#63724f#62714e#606f4e#5f6d4e#5e6b4d#5c694d#5b684c#5a664c#58644c#57624b#56614b#545f4a#535d4a#525c49#505a49#4f5848#4e5648#4d5547#4b5347#4a5146#495046#474e45#464c44#454b44#444943#424742#414642#404441#3f4240#3e413f#3c3f3e#3b3d3d#3a3c3c#383a3b#37393a#353739#343638#333437#313236#303135#2e2f34#2d2e34#2b2c33#2a2a32#292931#272730#26262f#24242e#23222e#21212d#201f2c",
+  "extensions": {
+    "https://matplotlib.org/viscm": {
+      "type": "cyclic",
+      "half1_control_points": [
+        [
+          15.4,
+          1.3,
+          -8.0
+        ],
+        [
+          35.0,
+          10.0,
+          -22.0
+        ],
+        [
+          57.0,
+          16.0,
+          -31.0
+        ],
+        [
+          78.0,
+          6.0,
+          -18.0
+        ],
+        [
+          97.0,
+          -1.9,
+          -1.1
+        ]
+      ],
+      "half2_control_points": [
+        [
+          97.0,
+          -1.9,
+          -1.1
+        ],
+        [
+          92.0,
+          -10.0,
+          16.0
+        ],
+        [
+          85.8,
+          -17.3,
+          32.7
+        ],
+        [
+          55.0,
+          -10.0,
+          16.0
+        ],
+        [
+          15.4,
+          1.3,
+          -8.0
+        ]
+      ],
+      "spline_method": "Bezier",
+      "uniform_colorspace": "CAM02-UCS"
+    }
+  }
+}
