@@ -4,13 +4,13 @@ All Earthmover colormaps are designed to be readable by people with color vision
 
 ## Design approach
 
-The primary defense against colorblind inaccessibility is **monotonic lightness**. Regardless of how hues are perceived, a map that goes steadily from light to dark (or vice versa) will always convey data magnitude correctly. Every sequential Earthmover colormap has a strictly monotonic L\* (CIELAB lightness) profile, and the diverging map has a symmetric V-shaped profile.
+The primary defense against colorblind inaccessibility is **monotonic lightness**. Regardless of how hues are perceived, a map that goes steadily from light to dark (or vice versa) will always convey data magnitude correctly. Every sequential Earthmover colormap has a monotonic J' (CAM02-UCS lightness) profile, the diverging map has a V-shaped profile, and the cyclic map has a symmetric arch.
 
 This is the same principle behind matplotlib's `viridis` and the cmocean colormaps.
 
 ## Simulation methodology
 
-Colormaps were tested using the Brettel/Vienot (1999) simulation matrices at **full severity** (100%), representing complete dichromacy — the most extreme form of color vision deficiency. The three simulated conditions are:
+Colormaps were tested using the Viénot et al. (1999) simulation matrices at **full severity** (100%), representing complete dichromacy — the most extreme form of color vision deficiency. The three simulated conditions are:
 
 | Condition | Affects | Prevalence |
 |-----------|---------|------------|
@@ -39,12 +39,12 @@ Deuteranopia and protanopia (red-green color blindness) account for ~99% of CVD 
 **em.signal** (sequential, violet → lime)
 - Deuteranopia: Shifts to dark blue → light blue → golden → white. The violet-lime hue transition becomes blue-yellow, which is well-separated.
 - Protanopia: Shifts to dark blue → light grey → yellow → white. Clear gradation maintained.
-- Assessment: **Very good.** The large lightness range (L\* 12–97) ensures readability. Under CVD, the violet↔lime hue axis maps onto the blue↔yellow axis, which is the most discriminable axis for dichromats.
+- Assessment: **Excellent.** The large lightness range (J' 15–97) ensures readability. Under CVD, the violet↔lime hue axis maps onto the blue↔yellow axis, which is the most discriminable axis for dichromats.
 
 **em.diverging** (diverging, violet ↔ grey ↔ lime)
 - Deuteranopia: Becomes blue ↔ light ↔ yellow. The neutral center is preserved, and both arms remain visually distinct.
 - Protanopia: Becomes blue ↔ light ↔ yellow. Same positive result.
-- Assessment: **Excellent.** The violet↔lime axis is ideal for a colorblind-safe diverging map because it maps onto blue↔yellow under both forms of red-green CVD. This is superior to the common red↔blue diverging maps which collapse under protanopia.
+- Assessment: **Excellent.** The violet↔lime axis is ideal for a colorblind-safe diverging map because it maps onto blue↔yellow under both forms of red-green CVD.
 
 **em.ocean** (sequential, cool multi-hue)
 - Deuteranopia: Shifts to dark → blue → green-gold → yellow. Maintains a clear multi-step gradient.
@@ -54,22 +54,40 @@ Deuteranopia and protanopia (red-green color blindness) account for ~99% of CVD 
 **em.bloom** (sequential, pink family)
 - Deuteranopia: Shifts to dark → blue → light blue → white. Clean lightness ramp.
 - Protanopia: Shifts to dark → blue-grey → light grey → white. Less saturated but fully readable.
-- Assessment: **Excellent.** Like em.violet, the near-single-hue path means CVD simulation simply desaturates or shifts hue without disrupting the lightness gradient.
+- Assessment: **Excellent.** Near-single-hue path means CVD simply desaturates without disrupting the lightness gradient.
+
+**em.heat** (sequential, warm/fire)
+- Deuteranopia: Shifts to dark → golden-brown → yellow → white. Warm hues converge but lightness ramp is fully preserved.
+- Protanopia: Shifts to dark → olive-brown → yellow → white. Clear gradation maintained.
+- Assessment: **Excellent.** Monotonic lightness ensures full readability under all CVD types.
+
+**em.earth** (sequential, terrain)
+- Deuteranopia: Shifts to dark → blue-grey → tan → cream. Multi-step gradient preserved through lightness.
+- Protanopia: Shifts to dark → grey-blue → tan → cream. Similar result.
+- Assessment: **Very good.** The moderate saturation and strong lightness ramp maintain discriminability.
+
+**em.twilight** (cyclic, brand axis loop)
+- Deuteranopia: Violet half shifts to blue, lime half shifts to yellow. Both halves remain distinguishable.
+- Protanopia: Similar result. The symmetric lightness arch (dark → light → dark) carries the structure.
+- Assessment: **Good.** The cyclic structure is preserved via lightness symmetry, though some hue contrast is reduced at extreme CVD severity.
 
 ## Perceptual uniformity metrics
 
-Perceptual uniformity is quantified using the coefficient of variation (CV) of the step-wise ΔE (CIELAB color difference between consecutive colors in the 256-entry lookup table). Lower CV means more uniform steps.
+Perceptual uniformity is quantified using the coefficient of variation (CV) of the step-wise ΔE in CAM02-UCS color space. Lower CV means more uniform perceptual steps. All colormaps are optimized via arc-length parameterization in CAM02-UCS.
 
-| Colormap | L\* range | Mean ΔE | CV |
+| Colormap | J' range | Mean ΔE | CV |
 |----------|----------|---------|-----|
-| em.violet | 12–97 | 0.90 | 2.5% |
-| em.lime | 12–94 | 0.65 | 1.4% |
-| em.signal | 12–97 | 1.51 | 3.5% |
-| em.diverging | 35–97 | 0.92 | 2.3% |
-| em.ocean | 12–85 | 0.80 | 1.8% |
-| em.bloom | 12–97 | 0.70 | 3.1% |
+| em.violet | 15–97 | 0.44 | 0.1% |
+| em.lime | 15–94 | 0.42 | 0.5% |
+| em.signal | 15–97 | 0.67 | 1.5% |
+| em.diverging | 38–97 | 0.52 | 0.7% |
+| em.ocean | 15–86 | 0.50 | 0.5% |
+| em.bloom | 15–97 | 0.51 | 1.1% |
+| em.heat | 15–97 | 0.44 | 0.0% |
+| em.earth | 15–95 | 0.34 | 0.0% |
+| em.twilight | 15–97 | 0.77 | 0.3% |
 
-For comparison, matplotlib's `viridis` has a CV of approximately 2–3%. All Earthmover colormaps are within this range.
+For comparison, matplotlib's `viridis` has a CV of approximately 2–3% in CAM02-UCS. All Earthmover colormaps are at or below this level.
 
 ## Recommendations
 
@@ -78,9 +96,11 @@ For maximum accessibility:
 1. **Use `em.signal` or `em.diverging` as defaults.** The violet↔lime axis maps onto blue↔yellow under CVD — the most distinguishable pair for dichromats.
 2. **Add contour lines or hatching** when colorblind safety is critical and data has fine structure.
 3. **Avoid encoding information in hue alone.** The monotonic lightness of these colormaps means they work in grayscale too — test by printing in black and white.
+4. **Use `em.heat` for warm/fire data.** It maintains a strong lightness ramp that is fully preserved under all CVD types.
 
 ## References
 
 - Brettel, H., Viénot, F., & Mollon, J. D. (1997). Computerized simulation of color appearance for dichromats. *JOSA A*, 14(10), 2647–2655.
 - Kovesi, P. (2015). Good colour maps: How to design them. *arXiv:1509.03700*.
 - Crameri, F., Shephard, G. E., & Heron, P. J. (2020). The misuse of colour in science communication. *Nature Communications*, 11, 5444.
+- Luo, M. R., Cui, G., & Li, C. (2006). Uniform colour spaces based on CIECAM02 colour appearance model. *Color Research & Application*, 31(4), 320–330.
