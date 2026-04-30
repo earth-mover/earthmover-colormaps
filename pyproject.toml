@@ -1,0 +1,44 @@
+[project]
+name = "earthmover-colormaps"
+version = "0.1.0"
+description = "Perceptually uniform colormaps from the Earthmover brand palette"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+authors = [{ name = "Earthmover", email = "info@earthmover.io" }]
+keywords = ["colormap", "matplotlib", "visualization", "earthmover", "arraylake"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Framework :: Matplotlib",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+# Zero required dependencies — matplotlib is optional
+dependencies = []
+
+[project.optional-dependencies]
+matplotlib = ["matplotlib>=3.5"]
+
+[project.urls]
+Homepage = "https://github.com/earth-mover/earthmover-colormaps"
+Documentation = "https://github.com/earth-mover/earthmover-colormaps#readme"
+Issues = "https://github.com/earth-mover/earthmover-colormaps/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = ["earthmover_colormaps/"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["earthmover_colormaps"]
+
+[dependency-groups]
+dev = ["matplotlib>=3.5", "pytest>=8", "numpy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
