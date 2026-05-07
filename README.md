@@ -95,6 +95,18 @@ To inspect any map (or compare against a matplotlib builtin):
 uv run --group design python tools/compare_gui.py
 ```
 
+## Releasing
+
+Versions come from git tags via `hatch-vcs` — no edits to `pyproject.toml`. To cut a release:
+
+```bash
+git tag v0.2.0
+git push origin v0.2.0
+gh release create v0.2.0 --generate-notes
+```
+
+Publishing the GitHub release fires [`.github/workflows/publish.yml`](.github/workflows/publish.yml), which builds and uploads to PyPI via OIDC trusted publishing.
+
 ## License
 
 Apache 2.0. See [LICENSE](LICENSE).
