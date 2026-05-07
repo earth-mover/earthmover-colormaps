@@ -1,6 +1,6 @@
 [project]
 name = "earthmover-colormaps"
-version = "0.1.0"
+dynamic = ["version"]
 description = "Perceptually uniform colormaps from the Earthmover brand palette"
 readme = "README.md"
 license = "Apache-2.0"
@@ -28,8 +28,14 @@ Documentation = "https://github.com/earth-mover/earthmover-colormaps#readme"
 Issues = "https://github.com/earth-mover/earthmover-colormaps/issues"
 
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "earthmover_colormaps/_version.py"
 
 [tool.hatch.build.targets.sdist]
 include = ["earthmover_colormaps/"]
