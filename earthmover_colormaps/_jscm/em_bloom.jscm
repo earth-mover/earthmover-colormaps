@@ -8,41 +8,30 @@
   ],
   "colorspace": "sRGB",
   "domain": "continuous",
-  "colors": "#201f2b#211f2b#221f2c#231f2c#241f2d#251f2d#261f2e#271f2f#281f2f#291f30#2a1e30#2b1e31#2c1e31#2e1e32#2f1e33#301e33#311e34#321e35#331d35#351d36#361d37#371d37#381c38#3a1c39#3b1c3a#3c1c3a#3e1b3b#3f1b3c#401b3d#411a3d#431a3e#44193f#461940#471841#481841#4a1742#4b1743#4d1644#4e1545#4f1446#511547#531648#541749#56184b#57194c#591a4d#5a1b4f#5c1c50#5d1d51#5f1e52#601f54#622055#632156#652257#672359#68245a#6a255b#6b265c#6d275e#6e285f#702960#712a62#732b63#742c64#762d65#772e67#792f68#7a3069#7c316a#7e326c#7f336d#81346e#823570#843671#853772#873873#883975#8a3a76#8b3b77#8d3c79#8f3d7a#903e7b#923f7c#93407e#95417f#964280#984382#994483#9b4584#9d4685#9e4787#a04888#a14989#a34a8b#a54b8c#a64c8d#a84d8f#a94e90#ab4f91#ad5093#ae5194#b05295#b15397#b35498#b55699#b6579b#b8589c#ba599d#bb5a9f#bd5ba0#bf5ca2#c05da3#c25ea4#c45fa6#c560a7#c761a8#c962aa#ca63ab#cc65ad#ce66ae#cf67af#d168b1#d369b2#d46ab4#d66bb5#d86cb6#da6db8#db6eb9#dd70bb#df71bc#e172be#e273bf#e474c1#e675c2#e876c4#e978c5#eb79c6#ed7ac8#ef7bc9#f17ccb#f27dcc#f47fce#f680cf#f781d1#f682d3#f583d4#f483d5#f284d6#f185d7#ef85d8#ee86d9#ed87db#eb87dc#ea88dd#e988de#e889df#e689e0#e58ae1#e48be2#e28be3#e18ce4#e08ce5#df8de6#dd8de7#dc8ee8#db8ee9#da8fea#d88feb#d78feb#d690ec#d490ed#d391ee#d291ef#d192f0#cf92f1#ce93f2#cd93f3#cc93f3#ca94f4#c994f5#c895f6#c695f7#c595f8#c496f9#c497f9#c599f9#c69af9#c79cf9#c89ef9#c99ff9#c9a1f9#caa2f9#cba4f9#cca5f9#cda7f9#cea8f9#cfaaf9#d0acf9#d1adf9#d2aff8#d2b0f8#d3b2f8#d4b3f8#d5b5f8#d6b6f8#d7b8f8#d7b9f8#d8bbf8#d9bcf8#dabef8#dbbff8#dbc1f8#dcc2f8#ddc3f8#dec5f8#dec6f8#dfc8f8#e0c9f8#e1cbf7#e1ccf7#e2cdf7#e3cff7#e3d0f7#e4d1f7#e5d3f7#e5d4f7#e6d5f7#e7d7f7#e7d8f7#e8d9f7#e9dbf7#e9dcf7#eaddf7#eadef6#ebe0f6#ece1f6#ece2f6#ede3f6#ede4f6#eee6f6#eee7f6#efe8f6#efe9f6#f0eaf6#f0ebf6#f1ecf6#f1edf6#f2eef5#f2eff5#f3f0f5#f3f1f5#f4f2f5#f4f3f5#f4f3f5#f5f4f5#f5f5f5",
+  "colors": "201f2c211f2d22202e22203023213124213225223426223526233627233728233929243a2a243b2b253d2b253e2c26402d26412e26422f274430274531284732284832284a33294b34294d35294e362a50372a51382a53392b553a2b563b2b583c2c593d2c5b3e2c5d3f2d5e402d60412d62422e64432e65442e67452e69462f6a472f6c482f6e4930704a30724b30734c30754d31774e317950317b51317d52317f53328154328255328456328658328859338a5a338c5b338e5c33905d33925f349460349661349862349a63349c65349e6635a06735a26835a46935a66b35a96c36ab6d36ad6e36af7036b17136b37236b57337b77537b97637bb7737bd7838bf7a38c17b38c37c39c57e39c77f39c9803acb813acd833acf843bd1853bd3863cd5883cd7893dd98a3ddb8b3edd8d3ede8e3fe08f40e29040e49241e59342e79443e99543ea9644ec9845ee9946ef9a47f19b48f29c49f49d4af59f4bf7a04cf8a14df9a24efaa350fca451fda552fea653ffa755ffa857ffa859ffa95bffaa5dffaa5fffab61ffac63ffad65ffad66ffae68ffaf6affaf6cffb06dffb16fffb271ffb272ffb374ffb476ffb477ffb579ffb67bffb77cffb77effb87fffb981ffb982ffba84ffbb85ffbb87ffbc88ffbd8affbe8bffbe8cffbf8effc08fffc091ffc192ffc293ffc295ffc396ffc497ffc499ffc59affc69bffc69dffc79effc79fffc8a0ffc9a2ffc9a3ffcaa4ffcba5ffcba7ffcca8ffcca9ffcdaaffceabffceacffcfaeffd0afffd0b0ffd1b1ffd1b2ffd2b3ffd2b4ffd3b6ffd4b7ffd4b8ffd5b9ffd5baffd6bbffd7bcffd7bdffd8befed8c0fed9c1fed9c2fdd9c3fddac4fddac5fcdbc6fcdbc7fcdcc8fbdccafbddcbfbddccfadecdfadecefadfcffadfd0f9e0d1f9e0d2f9e1d3f8e1d4f8e2d5f8e2d6f8e3d7f7e3d8f7e4d9f7e4daf7e5dbf7e5dcf6e6ddf6e6def6e7dff6e7e0f6e8e0f6e8e1f5e9e2f5eae3f5eae4f5ebe5f5ebe6f5ece7f5ece8f5ede9f4ede9f4eeeaf4eeebf4efecf4efedf4f0eef4f1eef4f1eff4f2f0f4f2f1f4f3f2f4f3f3f5f4f3f5f5f4f5f5f5f5",
   "extensions": {
     "https://matplotlib.org/viscm": {
       "type": "sequential",
-      "min_Jp": 15.383299838853024,
-      "max_Jp": 97.0866377815264,
-      "control_points_ab": [
+      "anchors_Jpapbp": [
         [
-          1.2198763539431041,
-          -7.484635403748566
+          15.420818075979312,
+          1.2653825109903087,
+          -7.960049215179841
         ],
         [
-          32.39930874596047,
-          -19.87116326588819
+          57.04452586450834,
+          16.222956906277258,
+          -31.44039362445516
         ],
         [
-          24.189127950747483,
-          19.38217933189679
-        ],
-        [
-          37.85011463821006,
-          -29.790751547883232
-        ],
-        [
-          4.975430368072241,
-          -29.26047212672375
-        ],
-        [
-          -1.8667412454937637,
-          -1.1241945704150544
+          97.08666142056822,
+          -1.8667416107351373,
+          -1.1241947903166492
         ]
       ],
-      "n_control": 6,
-      "spline_method": "Bezier",
-      "uniform_colorspace": "CAM02-UCS"
+      "spline_method": "cubic-spline",
+      "uniform_colorspace": "CAM02-UCS",
+      "cmtype": "linear"
     }
   }
 }

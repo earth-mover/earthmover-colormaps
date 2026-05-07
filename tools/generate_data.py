@@ -62,11 +62,11 @@ def write_jscm(name, rgb, meta, output_dir):
     """
     os.makedirs(output_dir, exist_ok=True)
 
-    # Convert RGB to hex string
+    # .jscm `colors` is a continuous hex stream (6 chars per color, no separators).
     hex_colors = []
     for r, g, b in rgb:
         ri, gi, bi = int(round(r * 255)), int(round(g * 255)), int(round(b * 255))
-        hex_colors.append(f"#{ri:02x}{gi:02x}{bi:02x}")
+        hex_colors.append(f"{ri:02x}{gi:02x}{bi:02x}")
 
     cmap_type = meta.get("type", "sequential")
     usage_hints = []
@@ -77,6 +77,12 @@ def write_jscm(name, rgb, meta, output_dir):
     elif cmap_type == "cyclic":
         usage_hints = ["cyclic"]
 
+    # viscm's loader requires `cmtype` from this set: linear/diverging/diverging-continuous.
+    # Map our sequential→linear and cyclic→linear (viscm has no cyclic concept; view mode is
+    # cmtype-agnostic, so this only affects edit-mode dispatch).
+    viscm_cmtype = {"sequential": "linear", "diverging": "diverging", "cyclic": "linear"}[cmap_type]
+    viscm_meta = {**meta, "cmtype": viscm_cmtype}
+
     jscm = {
         "content-type": "application/vnd.matplotlib.colormap-v1+json",
         "name": name,
@@ -86,7 +92,7 @@ def write_jscm(name, rgb, meta, output_dir):
         "domain": "continuous",
         "colors": "".join(hex_colors),
         "extensions": {
-            "https://matplotlib.org/viscm": meta,
+            "https://matplotlib.org/viscm": viscm_meta,
         },
     }
 
@@ -101,24 +107,30 @@ def main():
     print("Earthmover Colormaps Generator")
     print("=" * 60)
 
-    # Step 1: Optimize existing colormaps
-    print("\n--- Optimizing existing colormaps ---")
-    optimized = optimize_all(COLORMAPS)
+    # `_data.py` may still hold names that have been retired (em.earth) or
+    # renamed (em.twilight → em.cycle); those come from `design_all()` now.
+    SEQUENTIAL_INPUT = ("em.violet", "em.ocean")
+    DESIGNED = ("em.lime", "em.signal", "em.diverging", "em.bloom", "em.cycle")
 
-    # Step 2: Design new colormaps
+    # Step 1: Optimize the input sequential/diverging maps
+    print("\n--- Optimizing existing colormaps ---")
+    input_cmaps = {name: COLORMAPS[name] for name in SEQUENTIAL_INPUT
+                   if name in COLORMAPS}
+    optimized = optimize_all(input_cmaps)
+
+    # Step 2: Design from-scratch maps
     print("\n--- Designing new colormaps ---")
     new_cmaps = design_all()
 
-    # Step 3: Combine all colormaps (preserving order)
+    # Step 3: Combine in display order (matches README table)
+    DISPLAY_ORDER = ("em.violet", "em.lime", "em.signal", "em.diverging",
+                     "em.ocean", "em.bloom", "em.cycle")
     all_colormaps = {}
-
-    # Existing (optimized) in original order
-    for name in COLORMAPS:
-        all_colormaps[name] = optimized[name]
-
-    # New colormaps
-    for name in ("em.heat", "em.earth", "em.twilight"):
-        all_colormaps[name] = new_cmaps[name]
+    for name in DISPLAY_ORDER:
+        if name in optimized:
+            all_colormaps[name] = optimized[name]
+        elif name in new_cmaps:
+            all_colormaps[name] = new_cmaps[name]
 
     # Step 4: Validate all
     print("\n\n" + "=" * 60)

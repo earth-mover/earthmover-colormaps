@@ -1,0 +1,46 @@
+{
+  "content-type": "application/vnd.matplotlib.colormap-v1+json",
+  "name": "em.cycle",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "usage-hints": [
+    "cyclic"
+  ],
+  "colorspace": "sRGB",
+  "domain": "continuous",
+  "colors": "201f2c22202f23213125223427233729243a2b253d2c26402e274330274632284a34294d362a50382b543a2b573d2c5b3f2d5e412d62432e66452f69482f6d4a30714c30754f317951317d54328256328659338a5b338e5e339360349763349b6535a06835a46b35a96e36ad7036b27337b67637bb7938bf7b38c47e39c8813acc843bd1863cd5893dd98c3edd8f3fe19141e59442e99744ec9946f09c48f39e4bf6a14df9a350fca552fea756ffa95affaa5fffac63ffad66ffaf6affb06effb272ffb375ffb579ffb67cffb880ffb983ffbb86ffbc89ffbe8dffbf90ffc193ffc296ffc499ffc59cffc69fffc8a2ffc9a5ffcba7ffccaaffceadffcfb0ffd1b3ffd2b5ffd4b8ffd5bbffd7bdffd8c0ffdac3ffdbc5ffdcc8ffdecaffdfcdffe1cfffe2d2ffe4d4ffe5d6ffe6d9ffe8dbffe9ddffeadfffebe1ffede3ffeee5ffefe7fff0e9fef1ebfdf2edfdf3eefcf3f0fbf4f1faf5f2f9f5f3f8f5f4f7f5f5f6f5f5f5f4f5f3f3f6f1f2f6eff1f6edf0f7eaeff7e7eef7e4edf7e1ecf7ddeaf7dae9f7d6e8f7d2e7f7cfe5f7cbe4f7c7e3f7c2e2f7bee0f7badff7b5def7b1dcf7acdbf6a7daf6a2d8f69dd7f598d5f592d4f58dd2f487d1f482cff37ccef375ccf26fcbf269c9f162c8f05bc6ef53c4ef4bc2ed42c1ec39bfeb2ebce922bae713b7e401b5e100b2de00b0db00aed800abd500a9d300a6d000a4cd00a2ca009fc7009dc4009bc20098bf0096bc0094ba0092b70090b4008db2008baf0089ad0087aa0085a80083a50081a3007fa0007d9e007b9c007999007797007595007393027190056f8e096e8c0c6c8a0f6a8711698514678316658117647f19627d1b617b1c5f781e5e761f5c74205b7222597023586e24566c25556a265468275267285165294f63294e612a4d5f2b4c5d2c4a5b2c49592d48582d46562e45542f44522f43502f424f30404d303f4b313e49313d48313c46313b4432394232384132373f32363d32353c32343a323338323237323135323033312f32312e30302d2f2f2b2d2f2a2b2e292a2e27282d26272d25252d24242c22222c21212c201f2c",
+  "extensions": {
+    "https://matplotlib.org/viscm": {
+      "type": "cyclic",
+      "anchors_Jpapbp": [
+        [
+          15.420818075979312,
+          1.2653825109903087,
+          -7.960049215179841
+        ],
+        [
+          57.04452586450834,
+          16.222956906277258,
+          -31.44039362445516
+        ],
+        [
+          97.08666142056822,
+          -1.8667416107351373,
+          -1.1241947903166492
+        ],
+        [
+          85.85578043465027,
+          -17.279261072427282,
+          32.707472736114724
+        ],
+        [
+          15.420818075979312,
+          1.2653825109903087,
+          -7.960049215179841
+        ]
+      ],
+      "spline_method": "cubic-spline",
+      "uniform_colorspace": "CAM02-UCS",
+      "cmtype": "linear"
+    }
+  }
+}

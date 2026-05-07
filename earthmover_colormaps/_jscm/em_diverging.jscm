@@ -8,65 +8,30 @@
   ],
   "colorspace": "sRGB",
   "domain": "continuous",
-  "colors": "#6d0edb#6e12dc#7015dd#7118dd#721bde#741ddf#7520e0#7622e1#7824e2#7926e3#7a28e3#7b2be4#7d2de5#7e2fe6#7f30e7#8132e8#8234e8#8336e9#8438ea#863aeb#873cec#883ded#893fee#8b41ef#8c43ef#8d44f0#8e46f1#9048f2#9149f3#924bf4#934df5#954ff5#9650f6#9752f7#9854f8#9a55f9#9b57fa#9c59fa#9d5afa#9e5cfa#a05efa#a160fa#a261fa#a363fa#a465fa#a566fa#a768fa#a86afa#a96cfa#aa6dfa#ab6ffa#ac71fa#ad72fa#ae74fa#af76fa#b178fa#b279fa#b37bfa#b47dfa#b57efa#b680fa#b782fa#b883f9#b985f9#ba87f9#bb88f9#bc8af9#bd8bf9#be8df9#bf8ff9#c090f9#c192f9#c294f9#c395f9#c497f9#c598f9#c59af9#c69cf9#c79df9#c89ff9#c9a0f9#caa2f9#cba4f9#cca5f9#cda7f9#cea8f9#cfaaf9#d0abf9#d1adf9#d1aef8#d2b0f8#d3b2f8#d4b3f8#d5b5f8#d6b6f8#d7b8f8#d7b9f8#d8bbf8#d9bcf8#dabef8#dbbff8#dbc0f8#dcc2f8#ddc3f8#dec5f8#dec6f8#dfc8f8#e0c9f8#e1caf7#e1ccf7#e2cdf7#e3cff7#e3d0f7#e4d1f7#e5d3f7#e5d4f7#e6d5f7#e7d7f7#e7d8f7#e8d9f7#e9dbf7#e9dcf7#eaddf7#ebdef6#ebe0f6#ece1f6#ece2f6#ede3f6#ede4f6#eee6f6#eee7f6#efe8f6#f0e9f6#f0eaf6#f1ebf6#f1ecf6#f1edf6#f2eef5#f2eff5#f3f0f5#f3f1f5#f4f2f5#f4f3f5#f4f4f5#f5f4f5#f5f5f5#f5f5f4#f5f5f3#f4f5f1#f4f5f0#f4f4ee#f3f4ed#f3f4eb#f2f4e9#f2f4e7#f2f4e5#f1f4e3#f1f3e1#f0f3df#f0f3dd#eff3db#eff3d9#eef3d7#eef2d4#edf2d2#ecf2d0#ecf2cd#ebf2cb#ebf1c9#eaf1c6#e9f1c4#e9f1c2#e8f1bf#e7f0bd#e7f0ba#e6f0b8#e5f0b5#e5f0b3#e4efb0#e3efad#e2efab#e1efa8#e1efa5#e0eea3#dfeea0#deee9d#ddee9a#dced98#dbed95#dbed92#daed8f#d9ed8c#d8ec89#d7ec86#d6ec83#d5ec80#d4eb7d#d3eb7a#d2eb77#d1ea73#d0ea70#cfe96c#cee969#cde965#cce861#cbe85e#cae75a#c9e756#c8e652#c7e64e#c6e54a#c4e545#c3e440#c2e43c#c1e336#bfe232#bde131#bcdf30#bade2f#b8dc2e#b6db2d#b4d92c#b2d82b#b0d72a#aed52a#add429#abd228#a9d127#a7cf26#a5ce25#a3cc24#a2cb23#a0ca22#9ec821#9cc720#9ac51f#99c41e#97c21e#95c11d#93c01c#92be1b#90bd1a#8ebc19#8cba18#8bb917#89b716#87b615#86b514#84b312#82b211#80b110#7faf0f#7dae0e#7bad0d#7aab0b#78aa0a",
+  "colors": "a653ffa755ffa756ffa858ffa85affa95cffa95dffaa5fffaa60ffab62ffab64ffac65ffac67ffad68ffad6affae6bffaf6dffaf6effb070ffb071ffb173ffb174ffb275ffb277ffb378ffb47affb47bffb57cffb57effb67fffb681ffb782ffb883ffb885ffb986ffb987ffba89ffbb8affbb8bffbc8dffbc8effbd8fffbe91ffbe92ffbf93ffbf94ffc096ffc197ffc198ffc299ffc39bffc39cffc49dffc49fffc5a0ffc6a1ffc6a2ffc7a3ffc8a5ffc8a6ffc9a7ffcaa8ffcaaaffcbabffccacffccadffcdaeffcdb0ffceb1ffcfb2ffcfb3ffd0b4ffd1b6ffd1b7ffd2b8ffd3b9ffd3baffd4bbffd5bdffd5beffd6bfffd7c0ffd7c1ffd8c2ffd9c3ffd9c4ffdac6ffdbc7ffdbc8ffdcc9ffddcaffddcbffdeccffdfcdffdfceffe0cfffe1d0ffe1d1ffe2d2ffe2d3ffe3d4ffe4d5ffe4d6ffe5d7ffe6d8ffe6d9ffe7daffe7dbffe8dcffe9ddffe9deffeadfffeae0ffebe1ffebe2ffece2ffede3ffede4ffeee5ffeee6ffefe6ffefe7fff0e8fff0e9fff0e9fff1eafff1ebfff2ebfff2ecfff2edfff3edfff3eefef3effef3effdf4f0fdf4f0fdf4f1fcf4f1fcf5f2fbf5f2fbf5f3faf5f3faf5f3f9f5f4f9f5f4f8f5f4f8f5f4f7f5f5f7f5f5f6f5f5f6f5f5f5f5f5f4f5f5f4f4f5f3f4f6f3f4f6f2f3f6f1f3f6f0f2f6eff2f6eef2f7edf1f7ecf1f7ebf0f7eaf0f7e9f0f7e8eff8e7eff8e6eef8e4eef8e3edf8e2edf8e1edf8dfecf8deecf8dcebf8dbebf8daeaf8d8eaf9d7e9f9d5e9f9d4e8f9d2e8f9d1e7f9cfe7f9cde6f9cce6f9cae5f9c8e5f9c7e4f8c5e4f8c3e3f8c2e2f8c0e2f8bee1f8bce1f8bae0f8b8e0f8b7dff8b5def8b3def7b1ddf7afddf7addcf7abdbf7a9dbf7a7daf7a5d9f6a3d9f6a1d8f69ed7f69cd7f69ad6f598d5f596d5f594d4f591d3f48fd3f48dd2f48ad1f388d1f386d0f383cff381cff27fcef27ccdf27accf177ccf175cbf072caf06fcaf06dc9ef6ac8ef67c7ef65c7ee62c6ee5fc5ed5cc4ed59c4ec56c3ec53c2ec50c1eb4dc1eb4ac0ea46bfea43bee93fbee93bbde838bce833bbe72fbbe72abae625b9e61fb8e518b8e50eb7e400",
   "extensions": {
     "https://matplotlib.org/viscm": {
       "type": "diverging",
-      "left": {
-        "min_Jp": 37.622538097190365,
-        "max_Jp": 97.07809155209144,
-        "control_points_ab": [
-          [
-            11.154900068935136,
-            -33.998626848011796
-          ],
-          [
-            15.38132737687461,
-            -34.11733205895908
-          ],
-          [
-            16.310138143108254,
-            -25.57171593411589
-          ],
-          [
-            8.997667870473238,
-            -14.343047453538597
-          ],
-          [
-            -1.8847734339452635,
-            -1.043534649591388
-          ]
+      "anchors_Jpapbp": [
+        [
+          57.04452586450834,
+          16.222956906277258,
+          -31.44039362445516
+        ],
+        [
+          97.08666142056822,
+          -1.8667416107351373,
+          -1.1241947903166492
+        ],
+        [
+          85.85578043465027,
+          -17.279261072427282,
+          32.707472736114724
         ]
-      },
-      "right": {
-        "min_Jp": 97.07809155209144,
-        "max_Jp": 65.77942728904723,
-        "control_points_ab": [
-          [
-            -1.8847734339452633,
-            -1.043534649591388
-          ],
-          [
-            -1.938418474211463,
-            9.129875713790149
-          ],
-          [
-            -16.178864963953675,
-            34.689663715728685
-          ],
-          [
-            -16.26354231846972,
-            31.78737802866211
-          ],
-          [
-            -17.78861903988502,
-            27.86291581660848
-          ]
-        ]
-      },
-      "n_control_per_arm": 5,
-      "spline_method": "Bezier",
-      "uniform_colorspace": "CAM02-UCS"
+      ],
+      "spline_method": "cubic-spline",
+      "uniform_colorspace": "CAM02-UCS",
+      "cmtype": "diverging"
     }
   }
 }
