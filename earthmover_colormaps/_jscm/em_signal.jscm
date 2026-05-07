@@ -8,45 +8,35 @@
   ],
   "colorspace": "sRGB",
   "domain": "continuous",
-  "colors": "#201f2b#211f2d#221f2e#232030#242032#252033#262035#272037#282139#29213b#2a213d#2b213f#2c2142#2e2244#2f2246#302249#31224b#33224e#342251#352253#372356#382359#39235c#3b235f#3c2362#3d2365#3f2368#40236b#42236e#432372#452375#462379#48237c#492280#4b2283#4c2287#4e228b#4f218e#512192#532196#54209a#56209e#571fa2#591fa6#5b1eaa#5c1dae#5e1cb3#5f1bb7#611abb#6319bf#6418c4#6616c8#6815cd#6913d1#6b11d6#6d0eda#6e11dc#7016dd#721ade#741ddf#7520e0#7723e1#7926e2#7a29e4#7c2ce5#7e2ee6#7f31e7#8133e8#8336e9#8438ea#863aeb#883ded#893fee#8b41ef#8d44f0#8e46f1#9048f2#924af3#934df4#954ff6#9751f7#9853f8#9a55f9#9b57fa#9d59f8#9e5bf6#a05df4#a15ef2#a260f0#a462ef#a563ed#a665eb#a767e9#a968e7#aa6ae5#ab6ce4#ac6de2#ad6fe0#ae70de#af72dc#b073db#b175d9#b276d7#b278d6#b379d4#b47bd2#b57cd1#b57ecf#b67fcd#b780cc#b781ca#b883c9#b884c7#b985c6#ba86c4#ba88c3#ba89c2#bb8ac0#bb8bbf#bc8cbd#bc8dbc#bd8ebb#bd8fba#bd90b8#be91b7#be92b6#be93b5#bf94b4#bf95b2#bf96b1#bf97b0#c098af#c099ae#c099ad#c09aac#c19bab#c19caa#c19da9#c19ea7#c29ea6#c29fa5#c2a0a4#c2a1a3#c2a2a2#c2a3a1#c3a3a0#c3a49f#c3a59e#c3a69c#c3a79b#c3a89a#c4a999#c4aa97#c4ab96#c4ac95#c4ad93#c4ae92#c4af91#c4b08f#c5b18e#c5b28d#c5b38b#c5b48a#c5b588#c5b687#c5b786#c5b884#c5b982#c5ba81#c5bb7f#c5bc7e#c5bd7c#c5be7b#c5bf79#c5c077#c5c275#c5c374#c5c472#c5c570#c5c66e#c5c76c#c5c96a#c5ca68#c5cb66#c4cc64#c4cd62#c4cf60#c4d05d#c4d15b#c4d359#c3d456#c3d554#c3d751#c3d84e#c2d94b#c2db48#c2dc45#c1dd42#c1df3e#c1e03a#c0e236#c0e334#c2e43b#c4e441#c5e447#c7e54c#c9e551#cae656#cce65b#cde660#cee764#d0e768#d1e86d#d3e871#d4e875#d5e979#d6e97d#d8ea81#d9ea85#daea89#dbeb8d#dceb91#deeb95#dfec98#e0ec9c#e1ec9f#e2eda3#e3eda7#e4edaa#e5eeae#e6eeb1#e7efb4#e7efb8#e8efbb#e9efbe#eaf0c1#ebf0c5#ebf0c8#ecf1cb#edf1ce#eef1d1#eef2d4#eff2d7#f0f2da#f0f3dc#f1f3df#f1f3e2#f2f3e5#f2f4e7#f3f4ea#f3f4ec#f4f4ee#f4f5f0#f4f5f2#f5f5f4#f5f5f5",
+  "colors": "201f2c21202e23213024223225223427233628243829253b2b263d2c263f2e27412f2843302946322948332a4a352b4d362b4f382c52392d543b2d573c2e593e2f5c402f5e41306143316344316646326948326c49336e4b34714d34744e357750357a52367c54367f5537825737855938885b388b5d398e5e3991603994623a98643a9b663b9e683ba16a3ba46c3ca76e3cab703dae723db1743db4763eb8783ebb7a3ebe7c3fc27e3fc58040c88240cb8441cf8641d28842d58a42d88c43db8e44df9044e29245e59446e89647eb9848ee9a49f09c4af39e4cf6a04df8a24ffaa451fda652fea755ffa858ffa95bffaa5effab60ffab63feac66fcac69faac6cf8ac6ff6ac71f4ac73f1ac76efac78edac7aebac7ce8ac7ee6ac80e4ac82e2ac83e0ac85deab87dcab88daab8ad8ab8bd6ab8cd4ab8ed2ab8fd0ab90ceab92cdab93cbab94c9ab95c8ab96c6ab97c5ab98c3ab99c2ab9ac0ab9bbfab9cbeac9dbdac9ebbac9fbaaca0b9aca1b8aca1b7aca2b6aca3b5aca4b4ada5b3ada5b2ada6b1ada7b0ada7afada8aeaea9aeaeaaadaeaaacaeabacafababafacabafadaaafada9afaea8afafa7afb0a6afb0a5afb1a3afb2a2afb3a1afb49fb0b49eb0b59cb0b69ab0b799b0b797b0b895b0b994b0ba92b0bb90b0bb8eafbc8cafbd8aafbe88afbf86afbf84afc082afc180afc27dafc37bafc479afc476afc574afc671afc76fafc86cafc969afca67afcb64afcc61afcc5eafcd5aafce57afcf54afd050afd14db0d249b0d345b0d441b0d53db0d638b1d833b1d92eb1da28b2db22b2dd1ab3df11b4e006b6e200b7e402b9e60ebbe81bbde925beeb2ec0eb36c1ec3dc2ed44c4ee4ac5ee50c6ef56c7ef5bc8f060c9f065cbf16accf16fcdf174cef278cff27cd0f281d1f285d2f289d3f38dd4f391d5f395d6f398d7f39cd8f3a0d9f4a3daf4a7dbf4aadcf4aeddf4b1def4b4def4b8dff4bbe0f4bee1f4c1e2f4c4e3f4c7e4f4cae5f5cde6f5d0e7f5d2e8f5d5e9f5d8e9f5daeaf5ddebf5dfecf5e2edf5e4eef5e6eff5e9f0f5ebf1f5edf2f5eff3f5f1f3f5f2f4f5f4f5f5f5",
   "extensions": {
     "https://matplotlib.org/viscm": {
       "type": "sequential",
-      "min_Jp": 15.383299838853024,
-      "max_Jp": 97.08663778152642,
-      "control_points_ab": [
+      "anchors_Jpapbp": [
         [
-          1.2198763539431041,
-          -7.484635403748566
+          15.420818075979312,
+          1.2653825109903087,
+          -7.960049215179841
         ],
         [
-          31.157103503726873,
-          -29.24490459754645
+          57.04452586450834,
+          16.222956906277258,
+          -31.44039362445516
         ],
         [
-          -47.912081183632665,
-          -69.34045182750626
+          85.85578043465027,
+          -17.279261072427282,
+          32.707472736114724
         ],
         [
-          137.3778707052406,
-          -19.56008281130947
-        ],
-        [
-          -93.42489964662606,
-          63.103129964296585
-        ],
-        [
-          3.1317749377003117,
-          31.95793539502931
-        ],
-        [
-          -1.8667412454937637,
-          -1.1241945704150544
+          97.08666142056822,
+          -1.8667416107351373,
+          -1.1241947903166492
         ]
       ],
-      "n_control": 7,
-      "spline_method": "Bezier",
-      "uniform_colorspace": "CAM02-UCS"
+      "spline_method": "cubic-spline",
+      "uniform_colorspace": "CAM02-UCS",
+      "cmtype": "linear"
     }
   }
 }

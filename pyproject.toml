@@ -38,8 +38,15 @@ include = ["earthmover_colormaps/"]
 packages = ["earthmover_colormaps"]
 
 [dependency-groups]
-dev = ["matplotlib>=3.5", "pytest>=8", "numpy", "colorspacious", "scipy"]
-design = ["matplotlib>=3.5", "numpy", "colorspacious", "scipy", "viscm"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
+dev = ["matplotlib>=3.5", "numpy", "colorspacious", "scipy"]
+design = [
+    "matplotlib>=3.5",
+    "numpy",
+    "colorspacious",
+    "scipy",
+    "viscm @ git+https://github.com/matplotlib/viscm.git",
+    "pyqt6",
+    "xarray",
+    "netcdf4",
+    "pooch",
+]

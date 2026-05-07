@@ -8,37 +8,38 @@
   ],
   "colorspace": "sRGB",
   "domain": "continuous",
-  "colors": "#f5f5f5#f5f4f5#f4f4f5#f4f3f5#f4f2f5#f3f2f5#f3f1f5#f3f0f5#f2eff5#f2eef5#f2eef6#f1edf6#f1ecf6#f0ebf6#f0eaf6#f0e9f6#efe8f6#efe7f6#eee6f6#eee5f6#ede4f6#ede3f6#ece2f6#ece1f6#ebe0f6#ebdff6#eadef6#eaddf7#e9dcf7#e9dbf7#e8daf7#e8d9f7#e7d8f7#e7d6f7#e6d5f7#e6d4f7#e5d3f7#e4d2f7#e4d1f7#e3d0f7#e3cef7#e2cdf7#e1ccf7#e1cbf7#e0caf8#e0c8f8#dfc7f8#dec6f8#dec5f8#ddc4f8#dcc2f8#dcc1f8#dbc0f8#dabff8#dabdf8#d9bcf8#d8bbf8#d8baf8#d7b8f8#d6b7f8#d6b6f8#d5b4f8#d4b3f8#d3b2f8#d3b1f8#d2aff8#d1aef9#d0adf9#d0abf9#cfaaf9#cea9f9#cda7f9#cda6f9#cca5f9#cba3f9#caa2f9#c9a1f9#c99ff9#c89ef9#c79df9#c69bf9#c59af9#c599f9#c497f9#c396f9#c295f9#c193f9#c192f9#c090f9#bf8ff9#be8ef9#bd8cf9#bc8bf9#bc89f9#bb88f9#ba87f9#b985f9#b884f9#b782fa#b681fa#b67ffa#b57efa#b47dfa#b37bfa#b27afa#b178fa#b077fa#af75fa#ae74fa#ad73fa#ad71fa#ac70fa#ab6efa#aa6dfa#a96bfa#a86afa#a768fa#a667fa#a566fa#a464fa#a363fa#a261fa#a160fa#a05efa#9f5dfa#9e5bfa#9d5afa#9c58fa#9b57fa#9a55f9#9954f8#9852f8#9751f7#9650f6#944ef5#934df5#924bf4#914af3#9048f2#8f47f2#8e46f1#8d44f0#8c43ef#8b41ef#8a40ee#893eed#883dec#873bec#863aeb#8438ea#8337ea#8235e9#8133e8#8032e7#7f30e7#7e2ee6#7d2de5#7c2be4#7b29e4#7a28e3#7826e2#7724e2#7622e1#7520e0#741edf#731cdf#7219de#7117dd#6f15dd#6e12dc#6d0fdb#6c0fd9#6b11d6#6a12d3#6914d0#6815cd#6716ca#6617c7#6518c4#6319c1#6219be#611abc#601bb9#5f1bb6#5e1cb3#5d1db1#5c1dae#5b1eab#5a1ea8#591fa6#581fa3#571fa1#56209e#55209b#542099#532196#522194#512191#50218f#4f228c#4e228a#4d2287#4c2285#4b2283#4a2280#49227e#48237c#472379#462377#452375#442373#432371#42236e#41236c#40236a#3f2368#3e2366#3d2364#3c2362#3b2360#3a235e#39235c#39235a#382358#372357#362255#352253#342251#33224f#33224e#32224c#31224a#302249#2f2247#2e2246#2e2244#2d2143#2c2141#2b2140#2b213e#2a213d#29213b#28213a#282139#272037#262036#262035#252034#242033#242031#232030#22202f#221f2e#211f2d#211f2c#201f2b",
+  "colors": "f5f5f5f5f4f5f4f4f4f4f3f4f3f3f4f3f2f3f3f1f3f2f1f2f2f0f2f1f0f2f1eff1f0eff1f0eef1f0edf0efedf0efecf0eeecf0eeebefeeeaefedeaefede9eeece9eeece8eeebe8eeebe7edebe6edeae6edeae5eceae5ece9e4ece9e3ece8e3ebe8e2ebe8e2ebe7e1ebe7e0eae6e0eae6dfeae6dfeae5deeae5dee9e5dde9e4dce9e4dce9e4dbe8e3dbe8e3dae8e3d9e8e2d9e8e2d8e7e1d8e7e1d7e7e1d6e7e0d6e7e0d5e6e0d5e6dfd4e6dfd4e6dfd3e6ded2e5ded2e5ded1e5ddd1e5ddd0e5ddcfe5ddcfe4dccee4dccee4dccde4dbcce4dbcce4dbcbe3dacbe3dacae3dac9e3d9c9e3d9c8e3d9c8e3d8c7e2d8c7e2d8c6e2d8c5e2d7c5e2d7c4e2d7c4e2d6c3e1d6c2e1d6c2e1d6c1e1d5c1e1d5c0e1d5bfe1d4bfe1d4bee1d4bee1d4bde0d3bce0d3bce0d3bbe0d2bbe0d2bae0d2b9e0d2b9e0d1b8e0d1b8e0d1b7e0d0b6dfd0b6dfd0b5dfd0b5dfcfb4dfcfb4dfcfb3dfcfb2dfceb2dfceb1dfceb1dfcdb0dfcdafdfcdafdfcdaedfccaddfccaddfccacdfccacdfcbabdfcbaadfcbaadfcba9dfcaa9dfcaa8dfcaa7dfcaa7dfc9a6dfc9a6dfc9a5dfc9a4dfc8a4dfc8a3dfc8a3dfc8a2dfc7a1dfc7a1dfc7a0dfc7a0dfc69fdfc69edfc69edfc69ddfc59cdfc59cdfc59bdfc59be0c49ae0c499e0c499e0c498e0c397e0c397e0c396e0c396e0c295e0c294e0c294e1c293e1c192e1c192e1c191e1c191e1c090e1c08fe2c08fe2bf8ee2bf8de2bf8de2bf8ce2be8be3be8be3be8ae3be8ae3bd89e3bd88e3bd88e4bd87e4bc86e4bc86e4bc85e5bc84e5bb84e5bb83e5bb82e5bb82e6ba81e6ba80e6ba80e6ba7fe7b97ee7b97ee7b97de8b87ce8b87ce8b87be8b87ae9b77ae9b779e9b778eab678eab677eab676ebb675ebb575ebb574ecb573ecb473ecb472edb471edb471edb370eeb36feeb36eefb26eefb26defb26cf0b16cf0b16bf1b16af1b069f1b069f2b068f2af67f3af66f3af66f4ae65f4ae64f4ae63f5ad63f5ad62f6ad61f6ac60f7ac60f7ac5ff8ab5ef8ab5df9ab5df9aa5cfaaa5bfaa95afba959fba959fca858fca857fca856fda755fda755fea654fea653ff",
   "extensions": {
     "https://matplotlib.org/viscm": {
       "type": "sequential",
       "min_Jp": 97.08663778152642,
-      "max_Jp": 15.383299838853024,
+      "max_Jp": 57.04452586450834,
       "control_points_ab": [
         [
           -1.8667412454937637,
           -1.1241945704150547
         ],
         [
-          17.6170725817234,
-          -15.199766325928536
+          4.826311373247065,
+          -7.877302934675562
         ],
         [
-          14.174029998523602,
-          -50.7937901867469
+          10.444063835623309,
+          -13.476620385879167
         ],
         [
-          15.756726188611019,
-          -33.61279637914863
+          18.763974017126458,
+          -22.025370899018224
         ],
         [
-          1.219876353943104,
-          -7.484635403748566
+          16.222956906277258,
+          -31.44039362445516
         ]
       ],
       "n_control": 5,
       "spline_method": "Bezier",
-      "uniform_colorspace": "CAM02-UCS"
+      "uniform_colorspace": "CAM02-UCS",
+      "cmtype": "linear"
     }
   }
 }
