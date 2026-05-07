@@ -29,7 +29,7 @@ import earthmover_colormaps  # registers colormaps with matplotlib on import
 import xarray as xr
 
 ds = xr.tutorial.open_dataset("air_temperature")
-ds.air.isel(time=0).plot(cmap="em.signal")
+ds.air.isel(time=0).plot(cmap="em.bloom")
 ```
 
 ![quick-start output](images/quickstart.png)

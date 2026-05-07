@@ -62,10 +62,21 @@ def design_bloom(n=256):
 
 
 def design_signal(n=256):
-    """em.signal: midnight → brand violet → brand lime → light grey."""
+    """em.signal: midnight → brand violet → hot pink → brand lime → light grey.
+
+    Brand violet and brand lime sit on opposite sides of CAM02-UCS, so a
+    direct path between them passes through near-neutral (muddy middle).
+    Inserting a high-chroma pink/magenta anchor at J'~72 forces the spline
+    to rotate around the *warm* side (violet → pink → lime), keeping
+    saturation high throughout.
+    """
+    PINK = np.array([72.0, 32.0, -10.0])      # vibrant magenta-pink
+    AMBER = np.array([80.0, 12.0, 25.0])      # warm amber, bridges pink → lime
     anchors = np.vstack([
         BRAND_MIDNIGHT_JPAPBP,
         BRAND_VIOLET_JPAPBP,
+        PINK,
+        AMBER,
         BRAND_LIME_JPAPBP,
         BRAND_LIGHT_JPAPBP,
     ])
