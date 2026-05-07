@@ -17,7 +17,11 @@ All colormaps are also available in reversed variants (e.g. ``"em.signal_r"``).
 
 from ._data import COLORMAPS as _COLORMAPS
 
-__version__ = "0.1.0"
+try:
+    from ._version import __version__
+except ImportError:
+    # Editable installs / source checkouts without a build run yet
+    __version__ = "0.0.0+unknown"
 
 __all__ = [
     "cm",
